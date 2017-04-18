@@ -1,0 +1,14 @@
+@font-face {
+	font-family: Circe 300;
+	src: url(../assets/fonts/circe/);
+}
+
+@font-face {
+	font-family: Cicre 600;
+	src: url(../assets/fonts/circe/circe_600.ttf);
+}
+
+@font-face {
+	font-family: Cicre 700;
+	scr: url(../assets/fonts/circe/circe_700.ttf);
+}

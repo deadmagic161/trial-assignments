@@ -12,9 +12,13 @@
     "normalize.css": "^4.1.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-less": "^3.0.5",
     "gulp-postcss": "^6.1.0",
-    "autoprefixer": "^6.3.3"
+    "gulp-rename": "^1.2.2",
+    "postcss-assets": "^4.1.0",
+    "postcss-short": "^3.0.3"
   }
 }
