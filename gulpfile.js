@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   rename = require ('gulp-rename'),
   short = require('postcss-short'),
   assets = require ('postcss-assets'),
+  concat = require('gulp-concat'),
   browserSync = require('browser-sync').create();
 
 
@@ -24,6 +25,7 @@ gulp.task('css-dev', function() {
     }),
   ];
     return gulp.src('./src/styles/*.css')
+          .pipe(concat('styles.css'))
           .pipe(postcss(processors))
           .pipe(rename('styleOut.css'))
           .pipe(postcss([

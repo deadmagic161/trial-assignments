@@ -28,6 +28,7 @@ a {
 .gallery-previev__img_small {
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
 	margin-bottom: 30px;
 	size: 90px 130px;
 }
@@ -36,12 +37,14 @@ a {
 	margin-bottom: 41px;
 }
 
-.gallery-previev__arrow {
+.gallery-previev__arrow-button {
 	background: #ffffff;
 	background-image: url(/assets/img/arrow.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	border: 1px solid rgba(222, 222, 222, 0.6);
+	cursor: pointer;
+	outline: none;
 	size: 42px 31px;
 	margin-left: 24px;
 }
@@ -50,6 +53,7 @@ a {
 	background-image: url(/assets/img/47.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	cursor: pointer;
 	display: inline-block;
 	vertical-align: top;
 	margin: 22px 110px 0 0;
@@ -77,6 +81,7 @@ a {
 
 .product-description__all-product_list {
 	display: inline-block;
+	margin-bottom: 55px;
 }
 
 .all-product__list {
@@ -96,4 +101,215 @@ a {
 
 .all-product__list_item:last-child {
 	margin: 0;
+}
+
+.product-price {
+	display: inline-block;
+	margin: 0 0 21px 0;
+}
+
+.product-price__list {
+	display: inline-block;
+}
+
+.product-price__list-item {
+	display: inline-block;
+	line-height: 30px;
+	margin: 0 9px 0 0;
+}
+
+.product-price__list-item:nth-child(2n) {
+	margin: 0 35px 0 0;
+}
+
+.product-price__list-item._strikethrough {
+	color: #bfbebe;
+	font: 18px 'Circe 300', Arial, sans-serif;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.product-price__list-item._gray {
+	color: #9a9b9b;
+	font: 18px 'Circe 700', Arial, sans-serif;
+	font-weight: 700;
+}
+
+.product-price__list-item._black .price-bold {
+	color: #131313;
+	font: 18px 'Circe 700', Arial, sans-serif;
+	font-weight: 700;
+}
+
+.product-price__list-item._black {
+	color: #131313;
+	font: 15px 'Circe 300', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.product-availability {
+	background: #f4f4f4;
+	display: inline-block;
+	size: 339px 65px;
+	margin-bottom: 50px;
+}
+
+.product-availability__checked-wrapp {
+	display: inline-block;
+	margin: 0 0 0 22px;
+}
+
+.product-availability__checked-icon {
+	background: url(../assets/img/check.png) no-repeat;
+	display: inline-block;
+	size: 14px 10px;
+	margin-right: 12px;
+}
+
+.product-availability__checked {
+	display: inline-block;
+}
+
+.product-availability__checked-text {
+	color: #131313;
+	font: 13px 'Circe 300', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.product-availability__checked-link {
+	color: #006be5;
+}
+
+.product-delivery__wrapp {
+	margin: 0 15px 0 22px;
+}
+
+.product-delivery__icon {
+	background: url(../assets/img/car.png) no-repeat;
+	display: inline-block;
+	size: 17px 13px;
+	margin-right: 8px;
+}
+
+.product-delivery__text {
+	display: inline-block;
+	font: 13px 'Circe 300', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.product-buttons {
+	display: inline-block;
+	margin-bottom: 42px;
+}
+
+.product-buttons__in-shop {
+	background: #006be5;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	font: 13px 'Circe 700', Arial, sans-serif;
+	font-weight: 700;
+	line-height: 24px;
+	display: inline-block;
+	size: 230px 40px;
+	outline: none;
+	margin-right: 24px;
+}
+
+.product-buttons__in-favorite {
+	background: #ffffff;
+	border: 2px solid #d9d9d9;
+	display: inline-block;
+	cursor: pointer;
+	font: 13px 'Circe 700', Arial, sans-serif;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	outline: none;
+	size: 230px 40px;
+}
+
+.product-description__text-wrapp {
+	size: 465px 49px;
+	margin-bottom: 45px;
+}
+
+.product-description__text {
+	color: #131313;
+	font: 13px 'Circe 300', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 18px;
+}
+
+.social-share {
+	display: inline-block;
+}
+
+.social-share__header {
+	display: inline-block;
+	font: 13px 'Circe 300', Arial, sans-serif;
+	font-weight: 300;
+	line-height: 18px;
+	text-transform: uppercase;
+	margin-right: 23px;
+}
+
+.social-list {
+	display: inline-block;
+}
+
+.social-list__icon {
+	display: inline-block;
+}
+
+.social-list__item {
+	display: inline-block;
+	border: 2px solid #d9d9d9;
+	border-radius: 50%;
+	vertical-align: middle;
+	size: 30px;
+	margin-right: 12px;
+}
+
+.social-list__item._vk {
+	background: url(../assets/img/vk.png) no-repeat center;
+}
+
+.social-list__item._google {
+	background: url(../assets/img/google.png) no-repeat center;
+}
+
+.social-list__item._fb {
+	background: url(../assets/img/fb.png) no-repeat center;
+}
+
+.social-list__item._twitter {
+	background: url(../assets/img/twitter.jpg) no-repeat center;
+}
+
+
+
+.social-share__counter {
+	background: #efefef;
+	display: inline-block;
+	vertical-align: middle;
+	size: 45px 30px;
+	position: relative;
+}
+
+.social-share__counter::after {
+	content: '';
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	border: 10px solid transparent;
+	border-right: 15px solid #efefef;
+}
+
+.social-share__counter-number {
+	margin: 5px;
+	text-align: center;
 }
