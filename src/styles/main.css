@@ -227,6 +227,10 @@ a {
 	line-height: 30px;
 }
 
+.info-product {
+	display: none;
+}
+
 .product-buttons {
 	display: inline-block;
 	margin-bottom: 42px;
@@ -244,6 +248,7 @@ a {
 	size: 230px 40px;
 	outline: none;
 	margin-right: 24px;
+	text-transform: uppercase;
 }
 
 .product-buttons__in-favorite {
@@ -259,9 +264,17 @@ a {
 	size: 230px 40px;
 }
 
+.product-button__forma {
+	display: none;
+}
+
 .product-description__text-wrapp {
 	size: 465px 49px;
 	margin-bottom: 45px;
+}
+
+.product-description__text-wrapp._see-320 {
+	display: none;
 }
 
 .product-description__text {
@@ -316,8 +329,6 @@ a {
 .social-list__item._twitter {
 	background: url(../assets/img/twitter.jpg) no-repeat center;
 }
-
-
 
 .social-share__counter {
 	background: #efefef;
@@ -484,6 +495,8 @@ a {
 	.product-description {
 		position: static;
 		display: block;
+		top: none;
+		right: none;
 	}
 
 	.product-description__header {
@@ -491,13 +504,84 @@ a {
 	}
 
 	.product-description__all-product_list{
-		margin: 0 36px 22px 14px;
+		margin: 0 36px 30px 14px;
 		size: 300px 37px;
 		line-height: 14px;
 	}
 
 	.product-price {
-		margin: 0 124px 24px 14px;
+		margin: 0 124px 35px 14px;
 		size: 200px 30px;
+	}
+
+	.product-availability {
+		size: 320px 65px;
+	}
+
+	.product-description__text-wrapp {
+		display: none;
+	}
+
+	.product-description__text-wrapp._see-320 {
+		display: block;
+		size: 299px 84px;
+		margin: 0 21px 27px 10px;
+	}
+
+	.info-product {
+		display: block;
+		border: 1px solid #eeefef;
+		size: 320px 41px;
+		margin: 0 0 15px 0;
+	}
+
+	.info-product__header {
+		display: inline-block;
+		font: 13px 'Circe 700', Arial, sans-serif;
+		font-weight: 700;
+		line-height: 20px;
+		text-transform: uppercase;
+		margin-left: 15px;
+		position: relative;
+	}
+
+	.info-product__arrow {
+		display: inline-block;
+		background: url(../assets/img/arrowDown.png) no-repeat center;
+		size: 11px 7px;
+		position: absolute;
+		left: 280px;
+		margin-top: 18px;
+	}
+
+	.product-buttons {
+		display: block;
+		size: 320px 97px;
+		margin-bottom: 36px;
+	}
+
+	.product-buttons__in-shop {
+		display: block;
+		size: 290px 40px;
+		margin: 0 15px 17px 15px;
+	}
+
+	.product-buttons__in-favorite {
+		display: inline-block;
+		size: 240px 40px;
+		margin: 0 18px 0 15px;
+	}
+
+	.product-button__forma {
+		display: inline-block;
+		border: none;
+		background: url(../assets/img/forma.png) no-repeat center;
+		size: 18px 24px;
+		outline: none;
+		vertical-align: middle;
+	}
+
+	.social-wrapp {
+		display: none;
 	}
 }
